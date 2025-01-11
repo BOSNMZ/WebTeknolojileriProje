@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vegan Diyeti</title>
+    <style>
+        /* Genel Stil */
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            padding-top: 60px; /* Navbar için boşluk */
+        }
+
+        /* Menü Çubuğu */
+        .navbar {
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            background-color: #b70000;
+            padding: 10px 0;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+        }
+
+        .navbar-item {
+            display: flex;
+            align-items: center;
+            color: white;
+            font-size: 14px;
+            font-weight: bold;
+            padding: 5px 10px;
+        }
+
+        .navbar-item img {
+            width: 24px;
+            height: 24px;
+            margin-right: 5px;
+        }
+
+        .navbar-item:hover {
+            color: #ffcccb;
+        }
+
+        /* Tablo Stili */
+        table {
+            width: 100%;
+            max-width: 800px;
+            margin: 20px auto;
+            border-collapse: collapse;
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            overflow: hidden;
+        }
+
+        th, td {
+            padding: 15px;
+            text-align: center;
+            border-bottom: 1px solid #ddd;
+        }
+
+        th {
+            background-color: #b70000;
+            color: white;
+        }
+
+        tr:hover {
+            background-color: #f2f2f2;
+        }
+
+        img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #b70000;
+            margin-top: 20px;
+        }
+
+        h2 {
+            text-align: center;
+            color: #333;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+<body>
+
+   <!-- Menü Çubuğu -->
+   <div class="navbar">
+    <a href="yemektarifleri.html" class="navbar-item">
+        Yemek Tarifleri
+    <a href="menuler.html" class="navbar-item">
+        MENÜLER
+    </a>
+    <a href="blog.html" class="navbar-item">
+        BLOG
+    </a>
+    <a href="diyet.html" class="navbar-item">
+        Diyet Listesi
+    </a>
+    <a href="login.html" class="navbar-item">
+        Giriş yap / Kayıt ol
+    </a>
+</div>
+
+    <!-- Başlık -->
+    <h1>Vegan Diyeti</h1>
+    <img src="vegan.jpeg" alt="Vegan Diyeti" style="display: block; margin: 20px auto; max-width: 800px;">
+
+    <!-- Diyet Tablosu -->
+    <h2>Haftalık Vegan Diyeti Planı</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Gün</th>
+                <th>Kahvaltı</th>
+                <th>Öğle Yemeği</th>
+                <th>Akşam Yemeği</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Pazartesi</td>
+                <td>Smoothie bowl, ceviz, chia tohumu</td>
+                <td>Kinoa salatası, avokado</td>
+                <td>Zeytinyağlı sebze yemeği, tam tahıllı ekmek</td>
+            </tr>
+            <tr>
+                <td>Salı</td>
+                <td>Meyve salatası, badem sütü</td>
+                <td>Izgara sebzeler, nohutlu salata</td>
+                <td>Mercimek çorbası, roka salatası</td>
+            </tr>
+            <tr>
+                <td>Çarşamba</td>
+                <td>Yulaf ezmesi, muz, fındık</td>
+                <td>Zeytinyağlı dolma, tahinli sos</td>
+                <td>Izgara tofu, sebzeli pilav</td>
+            </tr>
+            <tr>
+                <td>Perşembe</td>
+                <td>Limonlu su, avokadolu tost</td>
+                <td>Bulgur pilavı, sebze çorbası</td>
+                <td>Fırında sebzeli lazanya</td>
+            </tr>
+            <tr>
+                <td>Cuma</td>
+                <td>Yeşil smoothie, chia pudingi</td>
+                <td>Mercimek köftesi, domates salatası</td>
+                <td>Izgara sebzeli falafel, humus</td>
+            </tr>
+            <tr>
+                <td>Cumartesi</td>
+                <td>Sebzeli omlet (tofu)</td>
+                <td>Izgara sebze dürümü</td>
+                <td>Mantar çorbası, zeytinyağlı enginar</td>
+            </tr>
+            <tr>
+                <td>Pazar</td>
+                <td>Meyve salatası, fındık sütü</td>
+                <td>Kinoa köftesi, sebze salatası</td>
+                <td>Izgara sebze çorbası, tam tahıllı ekmek</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <!-- Yorum Alanı -->
+    <div style="max-width: 800px; margin: 20px auto;">
+        <h2>Yorum Yap</h2>
+        <form>
+            <textarea rows="4" cols="50" placeholder="Vegan Diyeti hakkında yorumunuzu yazın..." style="width: 100%; padding: 10px; border-radius: 8px; border: 1px solid #ccc;"></textarea>
+            <button type="submit" style="display: block; width: 100%; padding: 10px; margin-top: 10px; background-color: #b70000; color: white; border: none; border-radius: 8px; font-size: 16px; cursor: pointer;">Gönder</button>
+        </form>
+    </div>
+
+</body>
+</html>

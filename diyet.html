@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diyet Listesi</title>
+    <style>
+        /* Genel Stil */
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+        }
+
+        /* Menü Çubuğu */
+        .navbar {
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            background-color: #b70000;
+            padding: 10px 0;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+        }
+
+        .navbar-item {
+            display: flex;
+            align-items: center;
+            color: white;
+            font-size: 14px;
+            font-weight: bold;
+            padding: 5px 10px;
+        }
+
+        .navbar-item img {
+            width: 24px;
+            height: 24px;
+            margin-right: 5px;
+        }
+
+        .navbar-item:hover {
+            color: #ffcccb;
+        }
+
+        /* Diyet Listesi Kartları */
+        .cards-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 20px;
+            padding: 80px 20px 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .diet-card {
+            text-decoration: none;
+            color: inherit;
+            display: block;
+            background: #fff;
+            border-radius: 10px;
+            overflow: hidden;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+
+        .diet-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .diet-card .content {
+            padding: 15px;
+        }
+
+        .diet-card .title {
+            font-size: 18px;
+            font-weight: bold;
+            color: #333;
+            margin-bottom: 5px;
+            text-align: center;
+        }
+
+        .diet-card .details {
+            font-size: 14px;
+            color: #777;
+            margin-bottom: 10px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+   <!-- Menü Çubuğu -->
+   <div class="navbar">
+    <a href="yemektarifleri.html" class="navbar-item">
+        Yemek Tarifleri
+    <a href="menuler.html" class="navbar-item">
+        MENÜLER
+    </a>
+    <a href="blog.html" class="navbar-item">
+        BLOG
+    </a>
+    <a href="diyet.html" class="navbar-item">
+        Diyet Listesi
+    </a>
+    <a href="login.html" class="navbar-item">
+        Giriş yap / Kayıt ol
+    </a>
+</div>
+
+
+    <!-- Diyet Listesi Kartları -->
+    <div class="cards-container">
+        <a href="akdenizbeslenmediyet.html" class="diet-card">
+            <img src="akdenizdiyet.jpg" alt="Akdeniz Diyeti">
+            <div class="content">
+                <div class="title">Akdeniz Diyeti</div>
+                <div class="details">Sağlıklı ve uzun ömürlü yaşam için</div>
+            </div>
+        </a>
+
+        <a href="detoks.html" class="diet-card">
+            <img src="detox.jpeg" alt="Detoks Diyeti">
+            <div class="content">
+                <div class="title">Detoks Diyeti</div>
+                <div class="details">Vücudu toksinlerden arındırın</div>
+            </div>
+        </a>
+
+        <a href="vegan.html" class="diet-card">
+            <img src="vegan.jpeg" alt="Vegan Diyeti">
+            <div class="content">
+                <div class="title">Vegan Diyeti</div>
+                <div class="details">Hayvansal ürünlerden uzak beslenme</div>
+            </div>
+        </a>
+    </div>
+
+
+</body>
+</html>

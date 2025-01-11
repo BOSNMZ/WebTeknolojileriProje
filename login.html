@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kayıt Ol / Oturum Aç</title>
+    <style>
+        /* Genel Stil */
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            padding-top: 60px; /* Navbar için boşluk */
+        }
+
+        /* Menü Çubuğu */
+        .navbar {
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            background-color: #b70000;
+            padding: 10px 0;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+        }
+
+        .navbar-item {
+            display: flex;
+            align-items: center;
+            color: white;
+            font-size: 14px;
+            font-weight: bold;
+            padding: 5px 10px;
+        }
+
+        .navbar-item img {
+            width: 24px;
+            height: 24px;
+            margin-right: 5px;
+        }
+
+        .navbar-item:hover {
+            color: #ffcccb;
+        }
+
+        /* Form Bölgesi */
+        .form-container {
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            gap: 40px;
+            margin: 40px auto;
+            max-width: 900px;
+        }
+
+        /* Form Kart Stili */
+        .form-card {
+            max-width: 400px;
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            overflow: hidden;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+
+        .form-card:hover {
+            transform: scale(1.05);
+            box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .form-card h2 {
+            text-align: center;
+            color: #b70000;
+            margin-bottom: 20px;
+            font-size: 22px;
+        }
+
+        .form-card input {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 14px;
+        }
+
+        .form-card input[type="submit"] {
+            background-color: #b70000;
+            color: white;
+            font-size: 16px;
+            font-weight: bold;
+            border: none;
+            cursor: pointer;
+            transition: background-color 0.2s;
+        }
+
+        .form-card input[type="submit"]:hover {
+            background-color: #ff3b3b;
+        }
+
+        .form-card label {
+            margin-right: 10px;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Menü Çubuğu -->
+    <div class="navbar">
+        <a href="yemektarifleri.html" class="navbar-item">
+            Yemek Tarifleri
+        <a href="menuler.html" class="navbar-item">
+            MENÜLER
+        </a>
+        <a href="blog.html" class="navbar-item">
+            BLOG
+        </a>
+        <a href="diyet.html" class="navbar-item">
+            Diyet Listesi
+        </a>
+        <a href="login.html" class="navbar-item">
+            Giriş yap / Kayıt ol
+        </a>
+    </div>
+
+    <!-- Formlar -->
+    <div class="form-container">
+        <!-- Kayıt Ol Formu -->
+        <div class="form-card">
+            <h2>Kayıt Ol</h2>
+            <form>
+                <input type="text" name="username" placeholder="Kullanıcı Adı" required>
+                <input type="email" name="email" placeholder="E-posta" required>
+                <input type="password" name="password" placeholder="Şifre" required>
+                <label><input type="radio" name="cinsiyet" value="erkek"> Erkek</label>
+                <label><input type="radio" name="cinsiyet" value="kadın"> Kadın</label>
+                <br>
+                Doğum Tarihinizi Girin:
+                <input type="date" name="dogumtarihi">
+                Favori Kategorinizi Seçin:
+                <select>
+                    <option value="Tatlı">Tatlı</option>
+                    <option value="Tuzlu">Tuzlu</option>
+                    <option value="Sulu Yemek">Sulu Yemek</option>
+                    <option value="Et">Et</option>
+                    <option value="Tavuk">Tavuk</option>
+                </select>
+                <input type="submit" value="Kayıt Ol">
+            </form>
+        </div>
+
+        <!-- Oturum Aç Formu -->
+        <div class="form-card">
+            <h2>Oturum Aç</h2>
+            <form>
+                <input type="email" name="login-email" placeholder="E-posta" required>
+                <input type="password" name="login-password" placeholder="Şifre" required>
+                <input type="submit" value="Oturum Aç">
+            </form>
+        </div>
+    </div>
+
+</body>
+</html>

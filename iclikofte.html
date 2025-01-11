@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>İçli Köfte Tarifi</title>
+    <style>
+        /* Genel Stil */
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+        }
+
+        /* Menü Çubuğu */
+        .navbar {
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            background-color: #b70000;
+            padding: 10px 0;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+        }
+
+        .navbar-item {
+            display: flex;
+            align-items: center;
+            color: white;
+            font-size: 14px;
+            font-weight: bold;
+            padding: 5px 10px;
+        }
+
+        .navbar-item img {
+            width: 24px;
+            height: 24px;
+            margin-right: 5px;
+        }
+
+        .navbar-item:hover {
+            color: #ffcccb;
+        }
+
+        /* İçerik Kutusu */
+        .container {
+            max-width: 800px;
+            margin: 80px auto 0;
+            background: white;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        h1 {
+            color: #b70000;
+            text-align: center;
+        }
+
+        img {
+            width: 100%;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+
+        ul {
+            text-align: left;
+            list-style-type: square;
+        }
+
+        textarea {
+            width: 100%;
+            padding: 10px;
+            margin-top: 20px;
+            border-radius: 8px;
+            border: 1px solid #ccc;
+            box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1);
+            font-size: 16px;
+            font-family: Arial, sans-serif;
+            resize: vertical;
+            outline: none;
+        }
+
+        textarea:focus {
+            border-color: #b70000;
+            box-shadow: 0 0 8px rgba(183, 0, 0, 0.4);
+        }
+
+        button {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            margin-top: 20px;
+            border: none;
+            border-radius: 8px;
+            background-color: #b70000;
+            color: white;
+            font-size: 18px;
+            font-weight: bold;
+            cursor: pointer;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #a00000;
+        }
+    </style>
+</head>
+<body>
+
+  <!-- Menü Çubuğu -->
+  <div class="navbar">
+    <a href="yemektarifleri.html" class="navbar-item">
+        Yemek Tarifleri
+    <a href="menuler.html" class="navbar-item">
+        MENÜLER
+    </a>
+    <a href="blog.html" class="navbar-item">
+        BLOG
+    </a>
+    <a href="diyet.html" class="navbar-item">
+        Diyet Listesi
+    </a>
+    <a href="login.html" class="navbar-item">
+        Giriş yap / Kayıt ol
+    </a>
+</div>
+
+    <!-- Tarif İçeriği -->
+    <div class="container">
+        <h1>İçli Köfte Tarifi</h1>
+        <img src="icli.jpeg" alt="İçli Köfte">
+        <p><strong>Malzemeler:</strong></p>
+        <ul>
+            <li>2 su bardağı ince bulgur</li>
+            <li>1 su bardağı irmik</li>
+            <li>1 su bardağı un</li>
+            <li>1 tatlı kaşığı biber salçası</li>
+            <li>1 tatlı kaşığı tuz</li>
+            <li>Yeteri kadar su</li>
+        </ul>
+        <p><strong>İç harcı için:</strong></p>
+        <ul>
+            <li>300 gr kıyma</li>
+            <li>2 adet soğan (küçük doğranmış)</li>
+            <li>1 çay bardağı ceviz içi (isteğe bağlı)</li>
+            <li>1 yemek kaşığı tereyağı</li>
+            <li>Tuz, karabiber, pul biber</li>
+        </ul>
+        <p><strong>Hazırlık:</strong></p>
+        <p>1. Bulguru ve irmiği bir kaba alın, üzerine sıcak su ekleyip 10 dakika bekletin.</p>
+        <p>2. Soğanı tereyağında kavurun, kıymayı ekleyip kavurmaya devam edin. Baharatları ve cevizi ekleyin.</p>
+        <p>3. Hamur malzemelerini karıştırıp yoğurun. Hamurdan parçalar koparıp içine hazırladığınız harcı koyun ve kapatın.</p>
+        <p>4. Köfteleri yağda kızartın veya haşlayarak servis edin.</p>
+
+        <form>
+            <textarea rows="4" cols="50" placeholder="Yorumunuzu buraya yazın..."></textarea>
+            <button type="submit">Gönder</button>
+        </form>
+    </div>
+
+</body>
+</html>
